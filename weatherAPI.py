@@ -1,6 +1,6 @@
 import requests
 
-APIkey = '0b9ec521e0c913cd98a5430c6fae3baf'
+APIkey = ''
 
 city = input("Enter city name: ")
 
@@ -19,4 +19,4 @@ print("Feels Like: {}".format(main['feels_like']))
 
 
 
-#api.openweathermap.org/data/2.5/weather?q=London&appid=0b9ec521e0c913cd98a5430c6fae3baf
+#api.openweathermap.org/data/2.5/weather?q=London&appid={APIkey}

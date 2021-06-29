@@ -1,4 +1,5 @@
 import unittest
+import pandas
 from weatherAPI_functions import build_url, get_json
 
 

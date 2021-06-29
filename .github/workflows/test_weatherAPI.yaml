@@ -24,7 +24,7 @@ jobs:
       - name: Install sqlalchemy
         run: python -m pip install sqlalchemy        
 
-      - name: Install requests module
+      - name: Install datetime module
         run: python -m pip install datetime
 
       - name: Test with unittest

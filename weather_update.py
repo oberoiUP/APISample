@@ -38,10 +38,11 @@ def create_engine_function(dbName):
 
 
 def write_table(dataframe, dbName, tableName):
-    os.system('mysql -u root -pcodio -e "CREATE DATABASE IF NOT EXISTS '\
-		+ dbName + '; "')    
-    dataframe.to_sql(tableName, con=create_engine_function(dbName), if_exists='replace',
-                     index=False)
+    os.system('mysql -u root -pcodio -e "CREATE DATABASE IF NOT EXISTS '
+	+ dbName + '; "')
+    dataframe.to_sql(tableName, con=create_engine_function(dbName), 
+	if_exists='replace',
+    index=False)
 
 
 def save_data_to_file(dataframe, dbName, tableName, fileName):

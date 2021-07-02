@@ -33,12 +33,13 @@ def build_dataframe(json):
     return df
 
 
-def create_engine_function(dbName): 
+def create_engine_function(dbName):
     return create_engine('mysql://root:codio@localhost/' + dbName)
 
 
 def write_table(dataframe, dbName, tableName):
-    os.system('mysql -u root -pcodio -e "CREATE DATABASE IF NOT EXISTS ' + dbName + '; "')    
+    os.system('mysql -u root -pcodio -e "CREATE DATABASE IF NOT EXISTS '\
+		+ dbName + '; "')    
     dataframe.to_sql(tableName, con=create_engine_function(dbName), if_exists='replace',
                      index=False)
 
@@ -60,7 +61,7 @@ def update_database(dbName, tableName, fileName):
     df = pd.read_sql_table(tableName, con=create_engine_function(dbName))    
     return df
 
-  
+
 def main():
   
     database = 'weather'

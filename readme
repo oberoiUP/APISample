@@ -1,2 +1,2 @@
-[![Check Style](https://github.com/oberoiUP/APISample/actions/workflows/checkstyle.yaml/badge.svg)](https://github.com/oberoiUP/APISample/actions/workflows/checkstyle.yaml)
-[![(Tests](https://github.com/oberoiUP/APISample/actions/workflows/test_weatherAPI.yaml/badge.svg)](https://github.com/oberoiUP/APISample/actions/workflows/test_weatherAPI.yaml)
+![Check Style](https://github.com/oberoiUP/APISample/actions/workflows/checkstyle.yaml)
+![Tests](https://github.com/oberoiUP/APISample/actions/workflows/test_weatherAPI.yaml/badge.svg)
